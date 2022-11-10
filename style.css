@@ -1,0 +1,138 @@
+:root{
+    --img-width:max(35vw, 500px);
+    font-family: 'Roboto', sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 170px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border: none;
+    -webkit-appearance: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.content{
+    width: max(100vw - var(--img-width), 750px);
+}
+
+fieldset{
+    border: 0;
+    padding: 0;
+    margin-left: 48px;
+}
+legend{
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+label{
+    display: block;
+}
+body{
+    margin: 0;
+    display: flex;
+    background-color: #f9fafb;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+#cool-dog{
+    height: 100vh;
+    width: var(--img-width)
+}
+
+#form-content{
+    background-color: #ffffff;
+    border: solid, 1px, black;
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.5);
+    width: calc(100vw - var(--img-width));
+}
+
+#form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    gap: 48px;
+}
+
+header{
+    margin-left: 48px;
+    margin-bottom: 24px;
+    margin-top: 20vh;
+}
+
+#create-account-button{
+    margin-top: 48px;
+    margin-bottom: 12px;
+    margin-left: 48px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: hsl(204, 78%, 72%);
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.5);
+}
+label{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(50, 50, 50);
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+input{
+    border-radius: 5px;
+    border: solid 1.5px;
+    padding: 3px;
+    border-color: rgba(128, 128, 128, .5);
+}
+input:focus{
+    border-color: hsl(204, 78%, 72%);
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.5);
+}
+input:valid{
+    border-color: rgba(0, 128, 0, .5);
+}
+input:invalid{
+    border-color: rgba(255, 0, 0, .5);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+
+p{
+    margin-left: 48px;
+}
+p > a{
+    color: hsl(204, 78%, 72%);
+}
+
+
+
