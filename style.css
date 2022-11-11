@@ -3,6 +3,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
 input,
 textarea,
 select,
@@ -61,12 +66,31 @@ body{
 .content{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 #cool-dog{
     height: 100vh;
     width: var(--img-width)
 }
+
+#img-container{
+    position: relative;
+}
+#img-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: var(--img-width);
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    top: 50%;
+}   
 
 #form-content{
     background-color: #ffffff;
@@ -118,7 +142,7 @@ input:focus{
 input:valid{
     border-color: rgba(0, 128, 0, .5);
 }
-input:invalid{
+input:focus:invalid{
     border-color: rgba(255, 0, 0, .5);
 }
 
