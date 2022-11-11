@@ -38,29 +38,42 @@
                         <ul>
                             <li>
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" name="user-info" required>
+                                <input type="text" id="first-name" name="user-info" placeholder ="Simon" required>
                             </li>
                             <li>
                                 <label for="user-email">EMAIL</label>
-                                <input type="email" id="user-email" name="user-info" required>
+                                <input type="email" id="user-email" name="user-info" placeholder ="johnDoe@gmail.com" required>
                             </li>
                             <li>
                                 <label for="pwd">PASSWORD</label>
-                                <input type="password" id="pwd" name="user-info" required>
+                                <input type="password" 
+                                        id="pwd"
+                                        name="user-info" 
+                                        placeholder="Try dashlane out!" 
+                                        minlength="6" 
+                                        title="Please enter a more secure password" 
+                                        pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,}$"
+                                        required>
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" name="user-info" required>
+                                <input type="text" id="last-name" name="user-info" placeholder ="Richardson" required>
                             </li>
                             <li>
                                 <label for="user-phone">PHONE NUMBER</label>
-                                <input type="tel" id="user-phone" name="user-info" minlength="11" maxlength="12" pattern="^[0-9]*$" required>
+                                <input type="tel" id="user-phone" name="user-info" minlength="11" maxlength="13" pattern="^[0-9]*$" placeholder="xxx-xxxx-xxxx" required>
                             </li>
                             <li>
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-pwd" name="user-info" required>
+                                <input type="password" 
+                                        id="confirm-pwd" 
+                                        name="user-info" 
+                                        placeholder="Make sure it matches!" 
+                                        title="Please enter a more secure password"
+                                        pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,}$" 
+                                        required>
                             </li>
                         </ul>
                     </div>
